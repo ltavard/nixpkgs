@@ -7858,6 +7858,13 @@ with pkgs;
   # A GMP fork
   mpir = callPackage ../development/libraries/mpir {};
 
+  gmt = callPackage ../development/libraries/gmt {
+    #DCW_PATH = null;
+    #GSHHG_PATH = null;
+  };
+  
+  gmtsar = callPackage ../development/libraries/gmtsar { };
+
   gobjectIntrospection = callPackage ../development/libraries/gobject-introspection {
     nixStoreDir = config.nix.storeDir or builtins.storeDir;
     inherit (darwin) cctools;

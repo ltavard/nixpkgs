@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export DCW_DIR=$DCW_PATH
+export GSHHG_DIR=$GSHHG_PATH
+
